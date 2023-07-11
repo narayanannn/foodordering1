@@ -1,0 +1,330 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+p.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 8px;
+}
+ */
+
+ /* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.root {
+  --bg-color: #ecf0f3;
+  --color: #555;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  background-image: url("../src/image/download.jpeg");
+}
+
+.selection::selection {
+  background: transparent;
+}
+
+.background {
+  width: 100%;
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.card {
+  width: 370px;
+  height: 600px;
+  overflow: hidden;
+  margin: auto auto;
+  border-radius: 20px;
+  background-color: var(--bg-color);
+  box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
+}
+
+.btn-parent {
+  position: relative;
+  width: 190px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.28);
+  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+  border: 5px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin: 10px auto;
+  display: flex;
+  overflow: hidden;
+}
+
+.btn {
+  position: absolute;
+  width: 95px;
+  height: 50px;
+  background: #fff;
+  box-shadow: 8px 8px 8px #cbced1, -8px -8px 8px #cbced1;
+  border-radius: 20px;
+  top: -5px;
+  transition: 0.5s;
+  transition-timing-function: cubic-bezier(0.89, -0.23, 0.11, 1.38);
+}
+
+.login {
+  flex-grow: 1;
+  background-color: transparent;
+  line-height: 40px;
+  color: rgb(83, 83, 83);
+  z-index: 9999;
+  position: relative;
+}
+
+.login p {
+  position: absolute;
+  right: 25px;
+}
+
+.register {
+  flex-grow: 1;
+  text-align: center;
+  line-height: 40px;
+  color: rgb(83, 83, 83);
+  background-color: transparent;
+  z-index: 9999;
+  position: relative;
+}
+
+.register p {
+  position: absolute;
+  right: 20px;
+}
+
+.root .register:checked ~ .btn {
+  margin-left: 84.25px;
+}
+
+.root .parent_ {
+  height: 100%;
+  width: 210%;
+  position: relative;
+  margin-left: 165px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  transition: 0.6s;
+  justify-content: space-between;
+}
+
+.root .parent_.moveRegister {
+  margin-left: -225px;
+}
+
+.root .form {
+  height: 100%;
+  width: 400px;
+  position: relative;
+  right: 160px;
+}
+
+.card form {
+  margin: 50px auto;
+  width: 280px;
+  height: 80%;
+  position: relative;
+}
+
+.card form input.input-field {
+  width: 90%;
+  color: var(--color);
+  height: 50px;
+  border-radius: 5px;
+  margin: 10px auto;
+  background-color: transparent;
+  border-top: none;
+  border-bottom: 5px solid white;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  font-size: 18px;
+  padding: 20px 10px 20px 5px;
+  box-sizing: border-box;
+}
+
+.card form input.input-field:focus {
+  border-bottom: 5px solid rgb(155, 155, 155);
+}
+
+.card form a {
+  text-decoration: none;
+  font-size: 12px;
+  margin-left: 30px;
+  color: rgb(170, 174, 175);
+}
+
+.card form a:hover {
+  text-decoration: underline;
+}
+
+.card form label {
+  display: inline-block;
+  margin-left: -5px;
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+.card form input[type="checkbox"] {
+  display: inline-block;
+  width: 2px;
+  margin-right: 15px;
+}
+
+.card form button[type="submit"] {
+  width: 90%;
+  height: 30px;
+  position: absolute;
+  bottom: 100px;
+  right: 15px;
+  border-radius: 30px;
+  outline: none;
+  font-size: 16px;
+  border: none;
+  border: 2px solid var(--color);
+  background-color: transparent;
+}
+
+.card form button[type="submit"]:active {
+  background-color: var(--color);
+  color: white;
+}
+
+.root form.register-form {
+  margin-left: 200px;
+  z-index: 9999;
+}
+ */
